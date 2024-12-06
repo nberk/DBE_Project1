@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# THe Python module where the root URL patterns of the application are defined.
 ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
@@ -73,6 +74,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# Dictionary that contains the settings for all the databases to be used with Django.
+# There must always be a default database. 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -109,6 +112,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+# If you set this to False, Django will make some optimizations so as not to load the internationalization system.
 USE_TZ = True
 
 
