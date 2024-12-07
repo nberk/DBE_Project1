@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig', # Includes the main configuration of the blog application
 ]
 
 MIDDLEWARE = [
@@ -124,4 +125,5 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
+# The field type that will be used for the primary key of the models.
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

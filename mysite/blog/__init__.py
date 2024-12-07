@@ -1,0 +1,1 @@
+# Tells Python to treat the blog directory as a Python module.
